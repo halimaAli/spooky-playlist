@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "com.spooky.playlist.client-id",
+      "type": "java.lang.String",
+      "description": "Description for com.spooky.playlist.client-id."
+    },
+    {
+      "name": "com.spooky.playlist.redirect-url",
+      "type": "java.lang.String",
+      "description": "Description for com.spooky.playlist.redirect-url."
+    }
+  ] }
