@@ -1,10 +1,9 @@
 package com.spooky.playlist.controller;
 
 
+import com.spooky.playlist.model.Playlist;
 import com.spooky.playlist.service.GeneratePlaylistService;
 import com.spooky.playlist.service.PlaylistService;
-import com.spooky.playlist.service.SpotifyService;
-import com.spooky.playlist.model.Playlist;
 import jakarta.servlet.http.HttpSession;
 import lombok.AllArgsConstructor;
 import org.springframework.ui.Model;

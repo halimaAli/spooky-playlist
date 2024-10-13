@@ -48,11 +48,7 @@ public class PlaylistService {
         HttpEntity<ArrayList<String>> request = HttpUtil.createRequestEntity(body, accessToken, MediaType.APPLICATION_JSON);
         ResponseEntity<String> response = restTemplate.postForEntity(String.format(ApiPath.PLAYLIST_URL, playlistId) + "/tracks", request, String.class);
 
-        if (response.getStatusCode() == HttpStatus.OK) {
-            return "Created Playlist.";
-        } else {
-            return "Error: " + response.getStatusCode();
-        }
+        return response.getStatusCode().toString();
     }
 
     public Items<PlaylistTrack> getPlaylistTracks(String accessToken, String playlistId) {

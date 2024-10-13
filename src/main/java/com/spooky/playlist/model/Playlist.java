@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+
 
 @Getter
 @AllArgsConstructor
@@ -12,6 +14,6 @@ public class Playlist {
 
     private String id;
     private String href;
-    private Items<Track> items;
+    private ArrayList<PlaylistTrack> items;
     private Track tracks;
 }

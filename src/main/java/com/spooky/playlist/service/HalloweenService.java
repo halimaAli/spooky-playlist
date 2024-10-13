@@ -48,7 +48,12 @@ public class HalloweenService {
         Map<Set<String>, Artist> artistToGenreMap = new HashMap<>();
         Set<String> halloweenArtistsIds = new HashSet<>();
 
+        int counter = 0;
         for (PlaylistTrack track : tracks) {
+            counter++;
+            if (counter >= 50) {
+                break;
+            }
             for (Artist artist : track.getTrack().getArtists()) {
                 halloweenArtistsIds.add(artist.getHref());
             }
